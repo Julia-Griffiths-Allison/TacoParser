@@ -24,7 +24,6 @@ namespace LoggingKata
                 logger.LogWarning("It's null!");
                 return null; // TODO Implement
             }
-
             // grab the latitude from your array at index 0
             // grab the longitude from your array at index 1
             // grab the name from your array at index 2
@@ -44,7 +43,6 @@ namespace LoggingKata
             point.Latitude = latitude;
             point.Longitude = longitude;
 
-
             var tacoBell = new TacoBell();
 
             tacoBell.Name = name;
@@ -52,7 +50,6 @@ namespace LoggingKata
 
             // Then, you'll need an instance of the TacoBell class
             // With the name and point set correctly
-
             // Then, return the instance of your TacoBell class
             // Since it conforms to ITrackable
             return tacoBell;

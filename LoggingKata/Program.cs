@@ -9,7 +9,6 @@ namespace LoggingKata
     {
         static readonly ILog logger = new TacoLogger();
         const string csvPath = "TacoBell-US-AL.csv";
-
         static void Main(string[] args)
         {
             // TODO:  Find the two Taco Bells that are the furthest from one another.
@@ -68,10 +67,8 @@ namespace LoggingKata
                         TacoBell1 = locA;
                         TacoBell2 = locB;
                     }
-
                 }
             }
-
             // Create a new corA Coordinate with your locA's lat and long
 
             // Now, do another loop on the locations with the scope of your first loop, so you can grab the "destination" location (perhaps: `locB`)
@@ -83,7 +80,6 @@ namespace LoggingKata
 
             // Once you've looped through everything, you've found the two Taco Bells farthest away from each other.
             Console.WriteLine($"The two furthest Taco Bells are {TacoBell1.Name} and {TacoBell2.Name}, and they are {Math.Round(distance / 1609, 2)} miles apart.");
-
         }
     }
 }
